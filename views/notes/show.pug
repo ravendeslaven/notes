@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        h1 Note
+        h3 Id
+        p= notes._id
+        h3 Name
+        p= notes.name
+        h3 Day
+        p= notes.dia
+        h3 Content
+        p= notes.data_user
+        br
+        a(href="/") Go to index
+        form(action=`/notes/edit/${notes._id}` method="post") 
+            button(type="submit") Update Note
+        form(action=`/notes/delete/${notes._id}` method="post")
+            button(type="submit") Delete
+        

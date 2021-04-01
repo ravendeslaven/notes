@@ -1,0 +1,126 @@
+
+/* Main Area */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(10, 10%) ;
+    width: 100%; 
+    grid-gap: 2px;
+    padding: 10px;
+    
+    /* grid-template-areas: auto auto auto auto; */
+}
+
+.mainHead{
+    grid-column: 2 / 10;
+}
+
+
+.button{
+    grid-column: 1 / 10;
+}
+
+.mainHead > h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    /*border: 1px solid black; */
+}
+
+
+
+/* Notes Area */
+
+.mainSection{
+    border: 1px solid black;
+    grid-column: 2 / span 8;
+    padding: 2%;
+    width: 100%;
+   
+}
+
+/*
+.mainAside{
+    border: 1px solid black;
+    grid-column: 8 / 10;
+    padding: 2%;
+}
+
+
+.articleAisde{
+    border: 1px solid black;
+}
+*/
+
+.notesContent{
+    border: 1px solid black;
+    /*grid-column: 1 / span 3; */
+
+    display: grid;
+    grid-template-areas:
+        'notes notes notes ';
+
+}
+
+
+/* Notes */
+
+.selection{
+    display: grid;
+    grid-template-areas: 'notes notes ... ... ... users users';
+}
+
+.notes{
+    grid-area: notes;
+}
+
+.users{
+    grid-area: users;
+}
+
+.ul{
+    padding: 2%;
+    margin: 0;
+}
+
+#notes{
+    grid-area: notes;
+    border: 1px solid black;
+
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*text-align: center; */
+    /*grid-column: 1 / span 4;*/
+}
+
+
+.buttonCreate{
+    width: 20%;
+    height: 20%;
+    align-content:space-around;
+}
+
+/*
+#rowNote{
+    grid: 
+
+}
+
+#columnNote{
+    grid-column: auto auto auto;
+}
+
+/*
+
+#note3{
+    grid-area: note3;
+    border: 1px solid black;
+}
+
+
+
+
+

@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        h1 Edit 
+        form(action=`/notes/update/${note._id}` method="POST") 
+            h3 Day
+            input(type="text" name="dia" value=`${note.dia}`)
+            h3 Note content
+            input(type="text" name="data_user" value=`${note.data_user}`)
+            button(type="submit") Update
+            br
+            a(href="/notes")  Back

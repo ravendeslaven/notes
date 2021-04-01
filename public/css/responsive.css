@@ -1,0 +1,12 @@
+@media screen and (max-width: 910px) {
+    .mainSection{
+        /*border: 1px solid black; */
+        grid-column: 2 / 10;
+    }
+
+    .mainAside{
+        /*border: 1px solid black; */
+        grid-column: 2 / 10;
+    }
+}
+

@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        h1 Welcome motherfucker, ready to insert data and save to the db
+        form(action="/note/save" method="post") 
+            span Write your note name
+            br
+            input(type="text" name="name")
+            br
+            br
+            span Day of activity
+            br
+            input(type="text" name="dia")
+            br
+            br
+            span Insert your iformation
+            br
+            input(type="text" name="data_user")
+            br
+            br
+            input(type="submit" value="Save") 
+            br
+            a(href="/notes") Back 
+            

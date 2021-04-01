@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="author" content="Raven")
+        title Document
+        link(rel="stylesheet", href="../public/css/styles.css")
+        link(rel="stylesheet", href="../public/css/responsive.css")
+    body 
+        div.container
+            header.mainHead
+                h1 Users
+                a(href="/").button Home
+                p
+                    a(href="/user/create") Add Users
+            section.mainSection
+                div.notesContent
+                    //h2 Nota 1
+                    //each note in notes 
+                        ul.ul
+                            article#notes
+                                h2= note.name
+                                p= note.dia
+                                p= note.data_user
+                                //Details - Work in develop logic for this method. This method show details for the note, increment size of container and show delete, calificate, back options
+                                form(action=`/notes/show/${note._id}`) 
+                                    button Config
+                                br
+                                form(action=`/edit/${note._id}` method="post")
+                                    button Edit
+                                br  
+                                form(action=`/delete/${note._id}` method="post")
+                                    button  Delete
+            
+            //aside.mainAside
+                header
+                    h1 Este es el aside jsjs
+                article
+                    p Aqui va informacion mela
+                
+            
+            
